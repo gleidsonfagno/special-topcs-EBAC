@@ -1,0 +1,75 @@
+html{
+     font-family: 'Nunito', sans-serif;
+     /* nunito */
+}
+body{
+     background-color: #130f0d;
+     color: #fff;
+}
+.boards{
+     display: grid;
+     grid-template-columns: repeat(auto-fit, 320px);
+     gap: 16px;
+     place-content: center;
+}
+.board{
+     background: #141316;
+     border-radius: 4px;
+     /* border: 1px solid #FD951F11; */
+     border: 1px solid #FD951F;
+}
+
+.board h3{
+     padding: 16px;
+     margin: 0;
+     color: #FD951Fcc;
+}
+
+.dropzone{
+     padding: 16px;
+     min-width: 282px;
+     min-height: 200px;
+}
+
+.card{
+     padding: 16px;
+     box-shadow: 0 2px 2px -1px #FD951Fcc;
+     width: 250px;
+     margin:  25px 0;
+     font-weight: 600;
+     font-size: 18px;
+     border-radius: 4px;
+     background: #1a1a1c;
+     cursor: move;
+}
+
+.status{
+     width: 30px;
+     height: 8px;
+     background: gray;
+     margin-bottom: 16px;
+     border-radius: 8px;
+}
+.status.green{
+     background: #23d2ac;
+}
+.status.blue{
+     background: #33adff;
+}
+.status.red{
+     background: red;
+}
+.hightlinght{
+     background: #FD951F08;
+}
+
+.card, .dropzone{
+     transition: 200ms;
+}
+.is-dragging{
+     cursor: move;
+     opacity: 0.3;
+}
+.over{
+     background: #4cd13711;
+}

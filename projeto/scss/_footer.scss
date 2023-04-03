@@ -1,0 +1,15 @@
+footer{
+     height: 150px;
+     background: #1A1A1A;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0 20px;
+     p{
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          text-align: right;
+          color: #FFFFFF;
+     }
+}

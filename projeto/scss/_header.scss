@@ -1,0 +1,116 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Montserrat', sans-serif;
+     text-decoration: none;
+}
+html{
+     scroll-behavior: smooth;
+}
+body{
+     overflow-y: scroll;
+}
+header{
+     margin-bottom: 321px;
+     padding: 0 10px;
+     display: flex;
+     flex-direction: column;
+     .btn_icon_header{
+          background: transparent;
+          border: none;
+          cursor: pointer;
+          display: none;
+      }
+     nav{
+          padding: 67px 0;
+          margin-bottom: 188px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .menu{
+               display: flex;
+               align-items: center;
+               gap: 90px;
+               overflow: hidden;
+               z-index: 2;
+          }
+     }
+     .intruducao{
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          .img{
+               max-width: 50%;
+               img{
+               display: block;
+               max-width: 100%;
+               }
+          }
+          .title{
+               max-width: 50%;
+               display: flex;
+               flex-direction: column;
+               gap: 40px;
+               button{
+                    width: 307px;
+                    height: 72px;
+                    left: 1091px;
+                    top: 798px;
+                    border: 1px solid #000000;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 29px;
+                    text-align: center;
+                    color: #0074FF;
+                    cursor: pointer;
+                    border: none;
+               }
+          }
+     }
+}
+
+@media (max-width: 800px) {
+     header{
+          nav{
+               margin: 0;
+               .btn_icon_header{
+                    display: block;
+                }
+               .menu{
+                    position: absolute;
+                    flex-direction: column;
+                    top: 0;
+                    height: 100%;
+                    width: 50vw;
+                    background: #ccc;
+                    display: flex;
+                    animation-duration: 1s;
+                    margin-left: -100vw;
+                    // background: #fff;
+                    animation-duration: 1s;
+                    padding: 1em;
+               }
+          }
+          .intruducao{
+               flex-direction: column;
+               align-items: center;
+               text-align: center !important;
+               padding: 0 30px ;
+               .img{
+                    max-width: 100%;
+               }
+               .title{
+                    max-width: 100%;
+                    word-wrap: break-word;
+                    button{
+                         margin: 0 auto;
+                    }
+               }
+          }
+     }
+}
+@keyframes showSidebar {
+     from {margin-left: -100vw;}
+     to {margin-left: -10vw;}
+ }

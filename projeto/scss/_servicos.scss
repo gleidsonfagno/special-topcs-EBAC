@@ -1,0 +1,33 @@
+.servicos{
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     gap: 42px;
+     margin-bottom: 221px;
+     .cards{
+          margin: 0 auto;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 22px;
+          text-align: center;
+          .card{
+               width: 309px;
+               margin: 0 auto;
+               background: #0074FF;
+               visibility: hidden;
+               h2{
+                    font-size: 36px;
+                    line-height: 44px;
+                    padding: 70px 0;
+                    color: #fff;
+               }
+               p{
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 22px;
+                    padding: 50px ;
+                    color: #fff;
+               }
+          }
+     }
+}

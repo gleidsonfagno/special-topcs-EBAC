@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://unpkg.com/scrollreveal"></script>
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+     <title>projeto</title>
+     <link rel="stylesheet" href="css/main.min.css">
+     <script src="script/script.js"></script>
+</head>
+<body>
+     <header>
+          <nav id="header">
+               <button class="btn_icon_header"onclick="toggleSideBar()">
+                    <img src="assetis/icon-menu-open.svg" alt="">
+               </button>
+
+               <span class="logo">
+                    <img src="assetis/logo.png" alt="logo">
+               </span>
+
+               <div class="menu" id="navigation_header">
+                    <button class="btn_icon_header" onclick="toggleSideBar()">
+                         <img src="assetis/icon-menu-close.svg" alt="">
+                    </button>
+                    <a onclick="closeSidebar()" href="#Inicio">Inicio</a>
+                    <a onclick="closeSidebar()" href="#localizacao">Localização</a>
+                    <a onclick="closeSidebar()" href="#servicos">Serviços</a>
+                    <a onclick="closeSidebar()" href="#segmentos">Segmentos</a>
+               </div>
+          </nav>
+
+          <div tabindex="0" onclick="closeSidebar()" class="intruducao" id="Inicio" >
+               <div  class="img">
+                    <img src="assetis/topcs-1.svg" alt="">
+               </div>
+               <div class="title">
+                    <h1>
+                         Transformação Digital
+                    </h1>
+                    <p>Lorem Ipsum is simply dummy
+                         text of the printing and typesetting
+                         industry. Lorem Ipsum has been the
+                         industry's standard dummy text ever
+                         since the 1500s.</p>
+                    <button onclick="showNotifications()">
+                         Ativar Notificações
+                    </button>
+               </div>
+          </div>
+     </header>
+     <main tabindex="0" onclick="closeSidebar()" id="content" >
+          <section class="localizacao" id="localizacao">
+               <h1>localizacao</h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore magnam placeat magni porro consectetur assumenda reiciendis iste aliquid eaque, non soluta voluptatibus, laborum labore consequuntur quo, alias quasi odio ab?</p>
+               <div id="map"></div>
+               <h2></h2>
+          </section>
+          <section class="servicos" id="servicos">
+               <h1>Serviços</h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ut iure quam aperiam itaque quaerat nostrum odit voluptates, molestias minima mollitia explicabo! Facilis fugit expedita nisi mollitia cumque consectetur necessitatibus.</p>
+               <div class="cards">
+                    <div class="card">
+                         <h2>UX Design</h2>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolore vel consequatur alias sapiente recusandae inventore</p>
+                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="card">
+                         <h2>Front-end</h2>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolore vel consequatur alias sapiente recusandae inventore</p>
+                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="card">
+                         <h2>Test</h2>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolore vel consequatur alias sapiente recusandae inventore</p>
+                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="card">
+                         <h2>Delivery</h2>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolore vel consequatur alias sapiente recusandae inventore</p>
+                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+               </div>
+          </section>
+          <section class="segmentos" id="segmentos">
+               <h1>Segmentos</h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, culpa consectetur. Rerum fugit explicabo saepe expedita, in tempora nisi, quo atque adipisci aliquam suscipit, temporibus eaque totam. Soluta, aspernatur labore?</p>
+               <div class="card-seg">
+
+                    <div class="cards-segmentos">
+                         <img src="assetis/ecomece.svg" alt="comercio">
+                         <div class="conteudo">
+                              <h2>E-commerce</h2>
+                              <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial operations and business workflows.
+                                   With e-commerce solutions, ERPS and improvised customer services.</p>
+                         </div>
+                    </div>
+                    <div class="cards-segmentos">
+                         <img src="assetis/fintechs.svg" alt="fintechs">
+                         <div class="conteudo">
+                              <h2>FinTechs</h2>
+                              <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial operations and business workflows.
+                                   With e-commerce solutions, ERPS and improvised customer services.</p>
+                         </div>
+                    </div>
+                    <div class="cards-segmentos">
+                         <img src="assetis/mobilidade.svg" alt="mobilidade">
+                         <div class="conteudo">
+                              <h2>Mobilidade</h2>
+                              <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial operations and business workflows.
+                                   With e-commerce solutions, ERPS and improvised customer services.</p>
+                         </div>
+                    </div>
+                    <div class="cards-segmentos">
+                         <img src="assetis/entretenimento.svg" alt="entretenimento">
+                         <div class="conteudo">
+                              <h2>Entretenimento</h2>
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, placeat. Sint molestiae accusamus vel obcaecati officiis tempora autem sapiente doloribus dolore magnam velit cum repellat, similique quidem ad magni eaque!</p>
+                         </div>
+                    </div>
+                    <div class="cards-segmentos">
+                         <img src="assetis/direito.svg" alt="">
+                         <div class="conteudo">
+                              <h2>teste</h2>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus esse autem fuga deleniti praesentium sit qui deserunt nihil repellendus nisi, similique eveniet dolores exercitationem aliquam voluptates delectus corporis. Officiis, quo?</p>
+                         </div>
+                    </div>
+                    <div class="cards-segmentos">
+                         <img src="assetis/hospitalidade.svg" alt="">
+                         <div class="conteudo">
+                              <h2>teste</h2>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus esse autem fuga deleniti praesentium sit qui deserunt nihil repellendus nisi, similique eveniet dolores exercitationem aliquam voluptates delectus corporis. Officiis, quo?</p>
+                         </div>
+                    </div>
+               </div>
+          </section>
+     </main>
+     <footer>
+          <img class="img" src="assetis/logo.svg" alt="logo">
+          <p>© Copyright 2022 | All Rights Reserved</p>
+     </footer>
+     <script src="js/gealocalizacao.js"></script>
+     <script src="js/notification.js"></script>
+     <script src="menu.js"></script>
+     <script src="animacoes.js"></script>
+</body>
+</html>
